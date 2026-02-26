@@ -1,4 +1,4 @@
-- main: "writing first yaml"
+- name: "writing first yaml"
   hosts: ansible
   task:
   - name: "Ping the server"
