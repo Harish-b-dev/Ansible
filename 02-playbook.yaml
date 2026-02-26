@@ -1,0 +1,13 @@
+- name: Hello world
+  hosts: local
+  tasks:
+  - name: print hello world
+    ansible.builtin.debug:
+      msg: hello, i'm learning yaml
+  
+- name: Play-2
+  hosts: web
+  tasks:
+  - name: printing from web
+    ansible.builtin.debug:
+      msg: hello, i'm play-2 from web
