@@ -1,5 +1,5 @@
 - name: "writing first yaml"
   hosts: ansible
-  task:
+  tasks:
   - name: "Ping the server"
     ansible.builtin.ping:
