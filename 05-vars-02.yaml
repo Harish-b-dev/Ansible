@@ -1,0 +1,16 @@
+- name: "global variables vs task level variables"
+  hosts: local
+  connection: local
+  vars:
+    course: "Learning DevSecOps in Join Devops"
+    duration: "150+ hours"
+    trainer: "Sivakumar"
+  
+  tasks:
+    - name: "printing global vs task level variables"
+      vars:
+        course: "Learning Devops"
+        duration: "4 months"
+      
+      ansible.builtin.debug:
+        msg: "Course is {{course}}, duration is {{duration}}, by {{trainer}}"
