@@ -1,0 +1,13 @@
+- name: "global variables vs task level variables"
+  hosts: local
+  connection: local
+  vars_file:
+    - course.yaml
+  
+  tasks:
+    - name: "printing global vs task level variables"
+      vars:
+        course: "Learning Devops"
+      
+      ansible.builtin.debug:
+        msg: "Course is {{course}}, duration is {{duration}}, by {{trainer}}"
