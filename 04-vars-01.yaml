@@ -1,0 +1,12 @@
+- name: "Defining variables in yaml"
+  hosts: local
+  connecction: local
+  vars: 
+    course: "Learning DevSecOps in Join Devops"
+    duration: "150+ hours"
+    trainer: "Sivakumar"
+  
+  tasks:
+  - name: "printing variables"
+    ansible.builtin.debug:
+      msg: "Course is {{course}}, duration is {{duration}}, by {{trainer}}"
