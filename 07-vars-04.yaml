@@ -13,7 +13,7 @@
   tasks:
     - name: printing inputs
       vars:
-        name: username
-        key: password
+        name: "{{username}}"
+        key: "{{password}}"
       ansible.builtin.debug:
         msg: "username is {{name}}, password is {{key}}"
