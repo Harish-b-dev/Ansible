@@ -1,0 +1,12 @@
+- name: demo on loops
+  hosts: local
+  connection: local
+  tasks:
+    - name: printing loops
+      ansible.builtin.package:
+        name: "{{item}}"
+        service: present
+      loop:
+      - nginx
+      - mysql
+      - zip
