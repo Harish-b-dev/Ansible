@@ -1,0 +1,24 @@
+- name: demo on data types
+  hosts: local
+  connection: local
+  vars:
+    Name: Harish
+    Days: 60
+    Is_live: true
+    details:
+      pin: 500032
+      location: gachibowli
+    topics:
+    - linux
+    - shell
+    - Ansible
+  
+  tasks:
+    - name: "printing data types"
+      ansible.builtin.debug:
+        msg: |
+          Name: {{Name}}
+          Days: {{Days}}
+          Is_live: {{Is_live}}
+          details: {{details}}
+          topics: {{topics}}
