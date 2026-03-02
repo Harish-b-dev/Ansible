@@ -7,10 +7,10 @@
   #vars_files:
   #  - course.yaml
   
-  vars_prompt:
-    - name: Name
-      prompt: "Enter your name: "
-      private: false
+  # vars_prompt:
+  #   - name: Name
+  #     prompt: "Enter your name: "
+  #     private: false
   
   tasks:
     - name: printing variable based on preferences
@@ -23,6 +23,6 @@
 # 1.) args
 # 2.) task
 # 3.) file
-#
+# 4.) prompt
 #
 #
