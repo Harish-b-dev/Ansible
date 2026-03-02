@@ -1,4 +1,4 @@
-- name: demo on loops
+- name: loop packages
   hosts: local
   connection: local
   become: Yes
