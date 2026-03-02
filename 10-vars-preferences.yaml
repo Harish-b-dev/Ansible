@@ -1,8 +1,8 @@
 - name: variable preferences
   hosts: local
   connection: local
-  vars:
-    Name: "I'm from Play"
+  #vars:
+  #  Name: "I'm from Play"
   
   #vars_files:
   #  - course.yaml
@@ -24,5 +24,5 @@
 # 2.) task
 # 3.) file
 # 4.) prompt
-#
+# 5.) play
 #
