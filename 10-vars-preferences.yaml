@@ -4,8 +4,8 @@
   vars:
     Name: "I'm from Play"
   
-  vars_files:
-    - course.yaml
+  #vars_files:
+  #  - course.yaml
   
   vars_prompt:
     - name: Name
@@ -22,7 +22,7 @@
 
 # 1.) args
 # 2.) task
-# 3.) 
+# 3.) file
 #
 #
 #
