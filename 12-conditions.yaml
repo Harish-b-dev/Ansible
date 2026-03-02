@@ -1,0 +1,11 @@
+- name: demo on conditions
+  hosts: local
+  connection: local
+  vars:
+    status: true
+  
+  tasks:
+    - name: printing based on confdition
+      ansible.builtin.debug:
+        msg: "Yes, it is live!"
+      when: status
