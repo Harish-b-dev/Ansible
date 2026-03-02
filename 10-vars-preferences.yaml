@@ -14,8 +14,15 @@
   
   tasks:
     - name: printing variable based on preferences
-      vars:
-        Name: "I'm from task"
+      #vars:
+        #Name: "I'm from task"
       
       ansible.builtin.debug:
         msg: "{{Name}}"
+
+# 1.) args
+# 2.) task
+# 3.) 
+#
+#
+#
