@@ -1,0 +1,11 @@
+- name: demo on conditions
+  hosts: local
+  connection: local
+  vars:
+    sessions: 7
+  
+  tasks:
+    - name: printing based on confdition
+      ansible.builtin.debug:
+        msg: "Sessions are more than 5"
+      when: sessions > 5
