@@ -20,7 +20,7 @@
     
 
     - name: file data shell
-      ansible.builtin.command: ls -ltr > files.txt
+      ansible.builtin.shell: ls -ltr > files.txt
       register: files_list1
     
     - name: printing file list
