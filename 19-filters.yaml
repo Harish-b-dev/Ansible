@@ -9,11 +9,20 @@
       project: Roboshop
       component: catalogue
     
-    tagsitems: 
-    - {"key": "name", "value": "Ansible"}
-    - {"key": "project", "value": "Roboshop"}
-    - {"key": "component", "value": "catalogue"}
-    
+    tagsitems: [
+        {
+            "key": "name",
+            "value": "Ansible"
+        },
+        {
+            "key": "project",
+            "value": "Roboshop"
+        },
+        {
+            "key": "component",
+            "value": "catalogue"
+        }
+    ]
 
 
   tasks:
