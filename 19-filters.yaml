@@ -10,6 +10,6 @@
       component: catalogue
 
   tasks:
-    - name: printing variables with filters
+    - name: printing default variables with filters
       ansible.builtin.debug:
         msg: "Hi Harish, {{GREETINGS | default('Good Morning')}}"
