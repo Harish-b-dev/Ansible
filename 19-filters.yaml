@@ -9,8 +9,7 @@
       project: Roboshop
       component: catalogue
     
-    tagsitems: 
-    [
+    tagsitems: [
         {
             "key": "name",
             "value": "Ansible"
