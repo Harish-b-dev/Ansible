@@ -43,3 +43,11 @@
     - name: printing list to dict
       ansible.builtin.debug:
         msg: "{{tagsitems | items2dict}}"
+    
+    - name: Assigning students.yaml data to variable
+      ansible.builtin.ser_fact:
+        student_data: "{{lookup('file', 'students.yaml') | from_yaml}}"
+    
+    - name: printing yaml data in json format
+      ansible.builtin.debug:
+        msg: "{{student_data | to_nice_json}}"
