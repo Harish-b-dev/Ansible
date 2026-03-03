@@ -17,5 +17,5 @@
     - name: printing , seperated values
       ansible.builtin.debug:
         msg: |
-          "original: topics"
+          "original: {{topics}}"
           "required: {{topics | split(',')}}"
