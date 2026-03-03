@@ -13,3 +13,7 @@
     - name: printing default variables with filters
       ansible.builtin.debug:
         msg: "Hi Harish, {{GREETINGS | default('Good Morning')}}"
+    
+    - name: printing , seperated values
+      ansible.builtin.debug:
+        msg: "{{topics | split(',')}}"
