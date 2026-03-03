@@ -8,6 +8,23 @@
       name: Ansible
       project: Roboshop
       component: catalogue
+    
+    tagsitems:
+    [
+        {
+            "key": "name",
+            "value": "Ansible"
+        },
+        {
+            "key": "project",
+            "value": "Roboshop"
+        },
+        {
+            "key": "component",
+            "value": "catalogue"
+        }
+    ]
+
 
   tasks:
     - name: printing default variables with filters
@@ -23,3 +40,7 @@
     - name: printing dict to list of items
       ansible.builtin.debug:
         msg: "{{tagsmap | dict2items}}"
+    
+    - name: printing list to dict
+      ansible.builtin.debug:
+        msg: "{{tagsmap | items2dict}}"
