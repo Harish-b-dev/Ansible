@@ -9,7 +9,7 @@
       project: Roboshop
       component: catalogue
     
-    tagsitems:
+    tagsitems: 
     [
         {
             "key": "name",
@@ -43,4 +43,4 @@
     
     - name: printing list to dict
       ansible.builtin.debug:
-        msg: "{{tagsmap | items2dict}}"
+        msg: "{{tagsitems | items2dict}}"
