@@ -19,3 +19,7 @@
         msg: |
           "original: {{topics}}"
           "required: {{topics | split(',')}}"
+    
+    - name: printing dict to list of items
+      ansible.builtin.debug:
+        msg: "{{tagsmap | dict2items}}"
