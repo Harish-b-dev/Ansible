@@ -4,6 +4,7 @@
   vars:
     topics: linux, shell, ansible, yaml
     course: Devops with Ansible
+    myIP: 256.260.99.8
     tagsmap:
       name: Ansible
       project: Roboshop
@@ -50,4 +51,18 @@
     
     - name: printing yaml data in json format
       ansible.builtin.debug:
-        msg: "{{student_data | to_nice_json}}""
+        msg: "{{student_data | to_nice_json}}"
+    
+    - name: printing capital letters
+      ansible.builtin.debug:
+        msg: "{{ course | upper }}"
+    
+    - name: printing lower letters
+      ansible.builtin.debug:
+        msg: "{{ course | lower }}"
+    
+    - name: check IPV4
+      ansible.builtin.debug:
+        msg: "{{ course | ansible.builtin.ipv4 }}"
+    
+
