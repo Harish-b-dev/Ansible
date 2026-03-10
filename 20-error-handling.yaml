@@ -1,5 +1,5 @@
 - name: checking idempotency
-  hosts: local
+  hosts: all
   connection: local
   become: yes
   tasks:
@@ -10,4 +10,3 @@
     - name: printing output
       ansible.builtin.debug:
         msg: "{{ user_output }}"
-        
