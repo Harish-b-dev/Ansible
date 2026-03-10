@@ -4,7 +4,7 @@
   vars:
     topics: linux, shell, ansible, yaml
     course: Devops with Ansible
-    myIP: 192.168.1.1
+    myIP: 256.260.99.8
     tagsmap:
       name: Ansible
       project: Roboshop
@@ -63,6 +63,6 @@
     
     - name: check IPV4
       ansible.builtin.debug:
-        msg: "{{ course | ansible.builtin.ipv4 }}"
+        msg: "{{ myIP | ansible.builtin.ipv4 }}"
     
 
