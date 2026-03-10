@@ -1,6 +1,7 @@
 - name: create user using ansible function
   hosts: all
   connection: local
+  become: yes
   tasks:
     - name: creating user
       ansible.builtin.user:
