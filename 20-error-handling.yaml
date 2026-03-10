@@ -1,0 +1,13 @@
+- name: checking idempotency
+  hosts: local
+  connection: local
+  become: yes
+  tasks:
+    - name: user_output
+      ansible.builtin.command: id Roboshop
+      register: user_output
+    
+    - name: printing output
+      ansible.builtin.debug:
+        msg: "{{ user_output }}"
+        
